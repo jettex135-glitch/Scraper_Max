@@ -49,9 +49,9 @@ public class MainActivity extends Activity {
         // Buttons
         addButton(layout, "▶️ Start Scraper", v -> startScraper());
         addButton(layout, "🖼️ Open Gallery", v -> openGallery());
+        addButton(layout, "📖 Full Tutorial", v -> showFullTutorial());
         addButton(layout, "⚙️ Proxy Settings", v -> showProxySettings());
         addButton(layout, "🛡️ Cloudflare Bypass", v -> showBypassInfo());
-        addButton(layout, "📖 Tutorial", v -> showTutorial());
         addButton(layout, "📁 Open Download Folder", v -> openDownloadFolder());
         
         scrollView.addView(layout);
@@ -174,25 +174,9 @@ public class MainActivity extends Activity {
             .show();
     }
     
-    private void showTutorial() {
-        new AlertDialog.Builder(this)
-            .setTitle("📖 Quick Tutorial")
-            .setMessage("1. Install Termux from F-Droid
-"
-                + "2. Run: pkg install python
-"
-                + "3. Run: pip install requests bs4 curl-cffi cloudscraper
-"
-                + "4. Run: python Duke2_Enhanced.py
-"
-                + "5. Enter URL and configure options
-"
-                + "6. View results in gallery.html
-
-"
-                + "For full tutorial, see TUTORIAL.md")
-            .setPositiveButton("OK", null)
-            .show();
+    private void showFullTutorial() {
+        Intent intent = new Intent(this, TutorialActivity.class);
+        startActivity(intent);
     }
     
     private void showTermuxDialog() {

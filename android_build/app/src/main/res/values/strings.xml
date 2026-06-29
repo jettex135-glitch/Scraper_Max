@@ -8,5 +8,15 @@
     <string name="proxy_settings">Proxy Settings</string>
     <string name="cloudflare_bypass">Cloudflare Bypass</string>
     <string name="external_viewer">External Viewer</string>
-    <string name="tutorial">Tutorial</string>
+    <string name="tutorial">Full Tutorial</string>
+    <string name="tutorial_welcome">Welcome to Web Scraper! Advanced media downloader with Cloudflare bypass, gallery viewer, and multi-threaded downloads.</string>
+    <string name="tutorial_install">Install Termux from F-Droid, then run pkg install python and pip install required packages.</string>
+    <string name="tutorial_run">Run the scraper with python Duke2_Enhanced.py and follow the interactive prompts to configure your download.</string>
+    <string name="tutorial_config">Configure media types, crawl depth, proxy settings, and bypass engine for your specific needs.</string>
+    <string name="tutorial_media">Choose from Images, Videos, Audio, Documents, Archives, eBooks, or all types combined.</string>
+    <string name="tutorial_gallery">Results are displayed in an interactive HTML gallery organized by media type with search and filter options.</string>
+    <string name="tutorial_bypass">Three bypass engines available: curl_cffi (TLS impersonation), cloudscraper (JS solver), or standard requests.</string>
+    <string name="tutorial_proxy">Configure HTTP, SOCKS5, or rotating proxies to avoid rate limiting and IP bans.</string>
+    <string name="tutorial_tips">Use session persistence for authenticated sites, enable lazy-load extraction, and leverage multi-threading for faster downloads.</string>
+    <string name="tutorial_troubleshoot">Common issues: permissions (termux-setup-storage), rate limiting (use proxy), or missing files (check /sdcard/Download/Duke2/).</string>
 </resources>
