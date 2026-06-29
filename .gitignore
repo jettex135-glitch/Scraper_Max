@@ -1,0 +1,26 @@
+# Android build artifacts
+android_build/build/
+android_build/.gradle/
+android_build/gradle/wrapper/*.jar
+android_build/gradlew
+android_build/gradlew.bat
+
+# Build outputs
+*.apk
+*.aab
+*.ap_
+
+# IDE
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# Extracted files
+extracted/
+Duke3.zip
